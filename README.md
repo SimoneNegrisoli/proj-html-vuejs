@@ -2,8 +2,8 @@
 
 Html e sito statico
 
-- 1.0 caricare immagini
-- 1.1 fare data
+- 1.0 caricare immagini v
+- 1.1 fare data v
 - 1.2 fare card componet
 - 1.3 fare html header, main , footer
 - 1.4 fare header che prende i link dal data
