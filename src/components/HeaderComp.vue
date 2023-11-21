@@ -1,7 +1,9 @@
 <template>
     <header>
         <nav>
-            <SearchComp />
+            <div class="container">
+                <SearchComp />
+            </div>
         </nav>
     </header>
 </template>
@@ -30,7 +32,7 @@ nav {
     height: 100px;
     position: fixed;
     z-index: 1000;
-    background-color: $mylightwithe;
+    background-color: $mybeige;
     width: 100%;
     padding: 20px;
 }
