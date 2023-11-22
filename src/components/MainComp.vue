@@ -35,27 +35,38 @@
                         <CardComp :imgPath="card.url" :imgTitle="card.title" :textCard="card.text" />
                     </div>
                 </div>
-                <div class="row">
+                <div class="row my-5  align-items-start ">
                     <div class="col-12 col-md-6">
-                        <div>
-                            immagine
-                        </div>
-                        <div>
-                            <div class="col-12 ">
-                                <h6>DREAM WITH <strong>MAXCOACH</strong> </h6>
-                                <h2>Construct A <span>Stunning</span>Career Perspective</h2>
-                                <AccordComp />
-                            </div>
-                        </div>
+                        <img src="../assets/img/about-us-03-image-01.png" alt="about us">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h6>DREAM WITH <strong>MAXCOACH</strong> </h6>
+                        <h2>Construct A <span>Stunning</span> Career Perspective</h2>
+                        <AccordComp />
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="dinamic-numbers">
             numeri dinamici
         </section>
-        <section>
-            latest feature qui componete card
+        <section id="courses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h6>CHOOSE WHERE YOU'D LIKE TO BEGIN</h6>
+                        <h2>Latest Featured Courses</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center  align-content-center">
+                    <div class="col-12 col-md-4 p-4" v-for="(course, index) in coursesData">
+                        <CourseCard :imgCourse="course.img" :priceCourse="course.price" :teacherImg="course.teacher"
+                            :teacherName="course.teacherName" :courseName="course.course" :lessonNum="course.lesson"
+                            :studentNum="course.student" />
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section>
             learn
@@ -75,20 +86,23 @@
 </template>
 
 <script>
-import { cardsData } from '../data/store.js';
+import { cardsData, coursesData } from '../data/store.js';
 import CardComp from './CardComp.vue';
 import MyButton from './MyButton.vue';
-import AccordComp from './AccordComp.vue'
+import AccordComp from './AccordComp.vue';
+import CourseCard from './CourseCard.vue';
 export default {
     name: 'MainComp',
     components: {
         CardComp,
         MyButton,
-        AccordComp
+        AccordComp,
+        CourseCard
     },
     data() {
         return {
             cardsData: cardsData,
+            coursesData: coursesData
         }
     }
 }
@@ -130,5 +144,9 @@ main {
 
 #start-code {
     background-color: $mywithe;
+}
+
+#dinamic-numbers {
+    background-color: $mybeige;
 }
 </style>

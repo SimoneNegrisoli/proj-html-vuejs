@@ -59,9 +59,7 @@ export default {
         display: flex;
         justify-content: space-between;
         border-radius: 10px;
-
-
-
+        transition: all 0.4s;
 
         &:hover {
             background-color: $mygreen;

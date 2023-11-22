@@ -44,7 +44,64 @@ const accordiumData = [
     }
 ]
 
-export { navData, exploreData, informationData, cardsData, accordiumData };
+const coursesData = [
+    {
+        img: './immagini/finance-course-thumbnail-04-480x298.jpg',
+        teacher: "Owen Christ",
+        teacheImg: './immagini/crist.jpg',
+        course: 'Personal Finance: Financial Security Thinking & Principles',
+        lesson: '2',
+        student: '281',
+        price: 'Free'
+    },
+    {
+        img: './immagini/course-02-480x298.jpg',
+        teacher: "Blanche Fields",
+        teacheImg: './immagini/blache.jpeg',
+        course: 'Learning to Write as a Professional Author',
+        lesson: '20',
+        student: '75',
+        price: '$40.00'
+    },
+    {
+        img: './immagini/stock-full-hd-03-480x298.jpg',
+        teacher: "Maggie Strickland",
+        teacheImg: './immagini/maggie.jpeg',
+        course: 'Customer-centric Info-Tech Strategies',
+        lesson: '24',
+        student: '950',
+        price: 'Free'
+    },
+    {
+        img: './immagini/stock-full-hd-04-480x298.jpg',
+        teacher: "Maggie Strickland",
+        teacheImg: './immagini/maggie.jpeg',
+        course: 'Open Programming Courses for Everyone: Python',
+        lesson: '17',
+        student: '66',
+        price: '$19.00'
+    },
+    {
+        img: './immagini/stock-full-hd-06-480x298.jpg',
+        teacher: "Blanche Fields",
+        teacheImg: './immagini/blache.jpeg',
+        course: 'Academic Listening and Note-taking',
+        lesson: '14',
+        student: '68',
+        price: '$26.00'
+    },
+    {
+        img: './immagini/course-featured-image-01-480x298.jpg',
+        teacher: "Blanche Fields",
+        teacheImg: './immagini/blache.jpeg',
+        course: 'Master jQuery in a Short Period of Time',
+        lesson: '6',
+        student: '51',
+        price: '$39.00'
+    },
+]
+
+export { navData, exploreData, informationData, cardsData, accordiumData, coursesData };
 
 
 
