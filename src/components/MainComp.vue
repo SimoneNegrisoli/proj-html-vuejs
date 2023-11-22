@@ -22,8 +22,20 @@
                 </div>
             </div>
         </section>
-        <section>
-
+        <section id="start-code">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h6>START LEARNING CODING LANGUAGES</h6>
+                        <h2>Build Your Dream <span>TODAY</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3" v-for="(card, index) in cardsData">
+                        <CardComp :imgPath="card.url" :imgTitle="card.title" :textCard="card.text" />
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             numeri dinamici
@@ -49,6 +61,7 @@
 </template>
 
 <script>
+import { cardsData } from '../data/store.js'
 import CardComp from './CardComp.vue'
 import MyButton from './MyButton.vue';
 export default {
@@ -56,6 +69,11 @@ export default {
     components: {
         CardComp,
         MyButton
+    },
+    data() {
+        return {
+            cardsData: cardsData,
+        }
     }
 }
 </script>
@@ -92,5 +110,9 @@ main {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
+}
+
+#start-code {
+    background-color: $mywithe;
 }
 </style>

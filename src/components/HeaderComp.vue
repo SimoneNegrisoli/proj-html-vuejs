@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { navData, exploreData, informationData } from '../data/store.js';
+import { navData } from '../data/store.js';
 import SearchComp from './SearchComp.vue';
 
 export default {
