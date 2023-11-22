@@ -10,8 +10,8 @@
                                 Learn any coding program in distance and for a reasonable fee. You don't have to struggle
                                 alone, you've got our assistance and help.
                             </p>
-                            <button class="my-button"><i class="fa-solid fa-download"></i> Download free
-                                E-book</button>
+                            <MyButton><i class="fa-solid fa-download"></i> Download free
+                                E-book</MyButton>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 ">
@@ -23,7 +23,7 @@
             </div>
         </section>
         <section>
-            build your dream qui componente card
+
         </section>
         <section>
             numeri dinamici
@@ -49,8 +49,14 @@
 </template>
 
 <script>
+import CardComp from './CardComp.vue'
+import MyButton from './MyButton.vue';
 export default {
-
+    name: 'MainComp',
+    components: {
+        CardComp,
+        MyButton
+    }
 }
 </script>
 
@@ -78,26 +84,13 @@ main {
             font-weight: 400;
             color: $mylightpurple;
         }
-
-        .my-button {
-            background-color: $mygreen;
-            padding: 15px 35px 15px 35px;
-            border-radius: 5px;
-            color: $mywithe;
-            border: none;
-            transition: all 0.4s;
-
-            &:hover {
-                background-color: $mypurple;
-            }
-        }
     }
-}
 
-h2 {
-    font-size: 48px;
-    color: $mypurple;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    h2 {
+        font-size: 48px;
+        color: $mypurple;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
 }
 </style>
