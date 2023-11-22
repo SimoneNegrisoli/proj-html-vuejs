@@ -35,6 +35,20 @@
                         <CardComp :imgPath="card.url" :imgTitle="card.title" :textCard="card.text" />
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div>
+                            immagine
+                        </div>
+                        <div>
+                            <div class="col-12 ">
+                                <h6>DREAM WITH <strong>MAXCOACH</strong> </h6>
+                                <h2>Construct A <span>Stunning</span>Career Perspective</h2>
+                                <AccordComp />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
@@ -61,14 +75,16 @@
 </template>
 
 <script>
-import { cardsData } from '../data/store.js'
-import CardComp from './CardComp.vue'
+import { cardsData } from '../data/store.js';
+import CardComp from './CardComp.vue';
 import MyButton from './MyButton.vue';
+import AccordComp from './AccordComp.vue'
 export default {
     name: 'MainComp',
     components: {
         CardComp,
-        MyButton
+        MyButton,
+        AccordComp
     },
     data() {
         return {

@@ -26,8 +26,25 @@ const cardsData = [
         text: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.",
     }
 ]
+const accordiumData = [
+    {
+        accTitle: 'Multiple Platforms Supported for Teaching & Studying',
+        accText: 'MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren’t supposed to be devoured in a short time, you can always access our knowledge base from any device. ',
+        isActive: false
+    },
+    {
+        accTitle: 'Multiple Course Participation at the Same Time',
+        accText: 'Study for a number of courses at the same time is possible as long as you can afford the fee and time for completing them in the proper time. Learn at your own desired timeline and timetable. Maximum up to 5 course at a time for a learner at MaxCoach. ',
+        isActive: false
+    },
+    {
+        accTitle: 'Track Study Progress & Deliver Prompt Feedback',
+        accText: 'It’s not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility. ',
+        isActive: false
+    }
+]
 
-export { navData, exploreData, informationData, cardsData };
+export { navData, exploreData, informationData, cardsData, accordiumData };
 
 
 
