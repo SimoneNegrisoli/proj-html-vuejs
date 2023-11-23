@@ -61,14 +61,12 @@ export default {
         border-radius: 10px;
         transition: all 0.4s;
 
+
+
         &:hover {
             background-color: $mygreen;
             color: $mywithe;
         }
-    }
-
-    .active {
-        display: block;
     }
 
     .mytext-acc {

@@ -48,7 +48,36 @@
             </div>
         </section>
         <section id="dinamic-numbers">
-            numeri dinamici
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between  text-center ">
+                        <div>
+                            <div class="mydata-num">1926</div>
+                            <div>
+                                <h6>FINISHED SESSIONS</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mydata-num">3.092+</div>
+                            <div>
+                                <h6>ENROLLED LEARNERS</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mydata-num">200</div>
+                            <div>
+                                <h6>ONLINE INSTRUCTORS</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mydata-num">100%</div>
+                            <div>
+                                <h6>SATISFACTION RATE</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="courses">
             <div class="container">
@@ -129,10 +158,10 @@
                 </div>
             </div>
         </section>
-        <section id="carusel-comp">
+        <section id="carusel-comp" class="mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 d-flex mt-5">
                         <CaruselComp />
                     </div>
                 </div>
@@ -142,7 +171,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center ">
-                        <h3>Start today for getting <span>Online Certification</span> </h3>
+                        <h6>Start today for getting <span>Online Certification</span> </h6>
                         <h2>You can be your own guiding star with our help!</h2>
                         <MyButton>Get started now</MyButton>
                     </div>
@@ -217,19 +246,57 @@ main {
 
 #start-code {
     background-color: $mywithe;
+    margin-top: 80px 0;
+
+    h2 {
+        padding: 20px 0;
+    }
+
+    .row {
+        padding: 40px;
+    }
+
 }
 
 #dinamic-numbers {
     background-color: $mybeige;
-}
+    margin: 80px 0;
 
-#event {
-    .EventsComp:hover {
-        background-color: rgb(248, 248, 248);
+    .row {
+        padding: 40px;
+    }
+
+    .mydata-num {
+        font-size: 2rem;
+        color: $mygreen;
+        padding: 20px 0;
+        font-weight: 800;
     }
 
     h6 {
-        margin-bottom: 0;
+        color: $mypurple;
     }
+}
+
+h6 {
+    margin-bottom: 0;
+    color: $mylightpurple;
+}
+
+h2 {
+    color: $mypurple;
+    font-weight: 600;
+    font-size: 3rem;
+
+    span {
+        color: $mygreen;
+        font-weight: 400;
+    }
+}
+
+
+
+#carusel-comp {
+    background-color: $mylightbeige;
 }
 </style>

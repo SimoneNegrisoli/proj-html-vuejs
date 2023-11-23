@@ -30,7 +30,7 @@ const accordiumData = [
     {
         accTitle: 'Multiple Platforms Supported for Teaching & Studying',
         accText: 'MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren’t supposed to be devoured in a short time, you can always access our knowledge base from any device. ',
-        isActive: false
+        isActive: true
     },
     {
         accTitle: 'Multiple Course Participation at the Same Time',
