@@ -139,7 +139,36 @@ const eventsData = [
         mounth: 'AUG',
     },
 ]
-export { navData, exploreData, informationData, cardsData, accordiumData, coursesData, eventsData };
+
+const caruselCoach = [
+    {
+        imgCoach: './immagini/testimonial-avata-02.jpg',
+        presentation: "I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.	",
+        nameCoach: 'Mina Hollace',
+        professionCoach: '/Freelance',
+    },
+    {
+        imgCoach: './immagini/testimonial-avata-04.jpg',
+        presentation: "MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+        nameCoach: 'Madley Pondor',
+        professionCoach: '/IT Specialist',
+    },
+    {
+        imgCoach: './immagini/testimonial-avata-01.jpg',
+        presentation: "I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation.",
+        nameCoach: 'Luvic Dubble',
+        professionCoach: '/Private Tutor',
+    },
+    {
+        imgCoach: './immagini/testimonial-avata-03.jpg',
+        presentation: "I'm a very strict person so I require everything to be organized and neat. MaxCoach guys just got me",
+        nameCoach: 'Florence Themes',
+        professionCoach: '/Multimedia Admin',
+    },
+]
+
+
+export { navData, exploreData, informationData, cardsData, accordiumData, coursesData, eventsData, caruselCoach };
 
 // Home: [
 //     'MaxCoach Education',

@@ -129,8 +129,14 @@
                 </div>
             </div>
         </section>
-        <section>
-            carosello
+        <section id="carusel-comp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <CaruselComp />
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="cta">
             <div class="container">
@@ -154,7 +160,8 @@ import CardComp from './CardComp.vue';
 import MyButton from './MyButton.vue';
 import AccordComp from './AccordComp.vue';
 import CourseCard from './CourseCard.vue';
-import EventsComp from './EventsComp.vue'
+import EventsComp from './EventsComp.vue';
+import CaruselComp from './CaruselComp.vue';
 export default {
     name: 'MainComp',
     components: {
@@ -162,7 +169,8 @@ export default {
         MyButton,
         AccordComp,
         CourseCard,
-        EventsComp
+        EventsComp,
+        CaruselComp
     },
     data() {
         return {
