@@ -6,19 +6,19 @@
                 {{ priceCourse }}
             </div>
         </div>
-        <div>
-            <div>
-                <div>
-                    {{ teacherImg }}
+        <div class="p-4">
+            <div class="d-flex align-items-center mt-3">
+                <div class="teachr-img">
+                    <img :src="teacherImg" :alt="teacherNames">
                 </div>
-                <div>
-                    {{ teacherName }}
+                <div class="mx-2">
+                    {{ teacherNames }}
                 </div>
             </div>
-            <div>
-                {{ courseName }}
+            <div class="mt-2">
+                <h4>{{ courseName }}</h4>
             </div>
-            <div class="d-flex">
+            <div class="d-flex mt-2">
                 <div>
                     <i class="fa-solid fa-file"></i> <span> {{ lessonNum }}</span>
                 </div>
@@ -37,7 +37,7 @@ export default {
         imgCourse: String,
         priceCourse: String,
         teacherImg: String,
-        teacherName: String,
+        teacherNames: String,
         courseName: String,
         lessonNum: String,
         studentNum: String
@@ -50,11 +50,20 @@ export default {
 
 .my-main-course {
     border-radius: 10px;
+    color: $mypurple;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:hover {
+        background-color: $mywithe;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.147);
+    }
 }
 
 .my-course-img {
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     div {
         position: absolute;
@@ -67,6 +76,27 @@ export default {
 
     img {
         width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.teachr-img {
+    width: 40px;
+    height: 40px;
+
+
+
+    img {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
     }
 }
 </style>

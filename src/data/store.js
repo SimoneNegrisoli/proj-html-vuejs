@@ -48,7 +48,7 @@ const coursesData = [
     {
         img: './immagini/finance-course-thumbnail-04-480x298.jpg',
         teacher: "Owen Christ",
-        teacheImg: './immagini/crist.jpg',
+        teacheImg: './immagini/blache.jpeg',
         course: 'Personal Finance: Financial Security Thinking & Principles',
         lesson: '2',
         student: '281',

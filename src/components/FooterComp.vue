@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row pt-5 pb-4">
                 <div class="col-12 text-center">© 2020 Maxcoach. All Rights Reserved</div>
 
             </div>
@@ -57,7 +57,8 @@ export default {
 @use '../assets/style/partials/variables.scss' as *;
 
 footer {
-    background-color: $mywithe;
+    background-color: $mylightwithe;
+    padding-top: 60px;
 }
 
 ul {

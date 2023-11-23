@@ -84,13 +84,13 @@
                 <div class="row">
                     <div class="col-12 text-center ">
                         <h6>CHOOSE WHERE YOU'D LIKE TO BEGIN</h6>
-                        <h2>Latest Featured Courses</h2>
+                        <h2>Latest Featured <span>Courses</span></h2>
                     </div>
                 </div>
                 <div class="row align-items-center  align-content-center">
-                    <div class="col-12 col-md-4 p-4" v-for="(course, index) in coursesData">
-                        <CourseCard :imgCourse="course.img" :priceCourse="course.price" :teacherImg="course.teacher"
-                            :teacherName="course.teacherName" :courseName="course.course" :lessonNum="course.lesson"
+                    <div class="col-12 col-md-4 mb-5" v-for="(course, index) in coursesData">
+                        <CourseCard :imgCourse="course.img" :priceCourse="course.price" :teacherImg="course.teacheImg"
+                            :teacherNames="course.teacher" :courseName="course.course" :lessonNum="course.lesson"
                             :studentNum="course.student" />
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                 <div class="row align-items-center ">
                     <div class="col-12 col-md-6">
                         <h6>WHY HESITATE TO REGISTER?</h6>
-                        <h2>Learn At Your Own <span>Pace</span></h2>
+                        <h2>Learn At Your Own <span> Pace</span></h2>
                         <ul>
                             <li>
                                 Select & customize courses to your preferences
@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <h6>WHY HESITATE TO REGISTER?</h6>
-                        <h2>Learn on your <span>mobile</span>anytime!</h2>
+                        <h2>Learn on your <span>mobile </span>anytime!</h2>
                         <p>
                             Save lessons for later and revise or write notes at any time and on multiple devices on your
                             way. Never interfere with activities of enjoyment or other precious moments.
@@ -145,21 +145,33 @@
         </section>
         <section id="event">
             <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h6>GET IN CONTACT NOW</h6>
+                        <h2>Upcoming <span>Events</span></h2>
+                    </div>
+                </div>
                 <div class="row my-ev-comp">
                     <EventsComp />
                 </div>
                 <div class="row">
                     <div class="col-12 text-center ">
                         <div class="d-flex align-items-center justify-content-center pt-5 ">
-                            <h6>Excited about our event?</h6>
-                            <a>View all events <i class="fa-solid fa-long-arrow-right"></i></a>
+                            <h6>Excited about our event? </h6>
+                            <a class="mx-1"> View all events <i class="fa-solid fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="carusel-comp" class="mt-5">
+        <section id="carusel-comp">
             <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h6>PEOPLE ARE PRAISING MAXCOACH</h6>
+                        <h2>What make they <span>love us?</span></h2>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12 d-flex mt-5">
                         <CaruselComp />
@@ -171,8 +183,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center ">
-                        <h6>Start today for getting <span>Online Certification</span> </h6>
-                        <h2>You can be your own guiding star with our help!</h2>
+                        <h6 class="p-2">Start today for getting <span>Online Certification</span> </h6>
+                        <h2 class="p-2 mb-5">You can be your own guiding star with our help!</h2>
                         <MyButton>Get started now</MyButton>
                     </div>
                 </div>
@@ -260,7 +272,7 @@ main {
 
 #dinamic-numbers {
     background-color: $mybeige;
-    margin: 80px 0;
+    margin: 80px 0 0 0;
 
     .row {
         padding: 40px;
@@ -297,6 +309,50 @@ h2 {
 
 
 #carusel-comp {
-    background-color: $mylightbeige;
+    background-color: $mylightwithe;
+
+    .row {
+        padding: 60px 0;
+    }
+}
+
+#courses {
+    background-color: $mylightwithe;
+
+    .row {
+        padding: 40px 0;
+    }
+}
+
+#learn {
+    .row {
+        padding: 40px 0;
+    }
+}
+
+#event {
+    padding: 80px;
+
+    .row {
+        padding: 40px 0;
+    }
+
+    a {
+        color: $mygreen;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#cta {
+    background-color: $mylightwithe;
+
+    .row {
+        padding: 60px 0;
+    }
 }
 </style>

@@ -41,9 +41,10 @@ export default {
 .my-acc-container {
     width: 100%;
     background-color: $mywithe;
+    transition: all 0.4s;
 
     .my-ac {
-        border: 1px solid;
+        border: 1px solid rgba(0, 0, 0, 0.125);
         border-radius: 10px;
 
         h5 {
@@ -61,8 +62,6 @@ export default {
         border-radius: 10px;
         transition: all 0.4s;
 
-
-
         &:hover {
             background-color: $mygreen;
             color: $mywithe;
@@ -71,6 +70,7 @@ export default {
 
     .mytext-acc {
         padding: 15px;
+        overflow: hidden;
     }
 }
 </style>
