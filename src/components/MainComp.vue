@@ -68,17 +68,80 @@
             </div>
 
         </section>
-        <section>
-            learn
+        <section id="learn">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-12 col-md-6">
+                        <h6>WHY HESITATE TO REGISTER?</h6>
+                        <h2>Learn At Your Own <span>Pace</span></h2>
+                        <ul>
+                            <li>
+                                Select & customize courses to your preferences
+                            </li>
+                            <li>
+                                Change the tutor and make arrangements
+                            </li>
+                            <li>
+                                Participate in events to join others
+                            </li>
+                            <li>
+                                Get the desired certificate delivered at house
+                            </li>
+                        </ul>
+                        <MyButton>Get started for free</MyButton>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <img src="src/assets/img/home-5-image-01.png" alt="home">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center ">
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <img src="src/assets/img/home-5-image-02.png" alt="home">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h6>WHY HESITATE TO REGISTER?</h6>
+                        <h2>Learn on your <span>mobile</span>anytime!</h2>
+                        <p>
+                            Save lessons for later and revise or write notes at any time and on multiple devices on your
+                            way. Never interfere with activities of enjoyment or other precious moments.
+                        </p>
+                        <MyButton>Get started for free</MyButton>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            event
+        <section id="event">
+            <div class="container">
+                <div class="row my-ev-comp">
+                    <EventsComp />
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <div class="d-flex align-items-center justify-content-center pt-5 ">
+                            <h6>Excited about our event?</h6>
+                            <a>View all events <i class="fa-solid fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             carosello
         </section>
-        <section>
-            CTA
+        <section id="cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center ">
+                        <h3>Start today for getting <span>Online Certification</span> </h3>
+                        <h2>You can be your own guiding star with our help!</h2>
+                        <MyButton>Get started now</MyButton>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -91,13 +154,15 @@ import CardComp from './CardComp.vue';
 import MyButton from './MyButton.vue';
 import AccordComp from './AccordComp.vue';
 import CourseCard from './CourseCard.vue';
+import EventsComp from './EventsComp.vue'
 export default {
     name: 'MainComp',
     components: {
         CardComp,
         MyButton,
         AccordComp,
-        CourseCard
+        CourseCard,
+        EventsComp
     },
     data() {
         return {
@@ -148,5 +213,15 @@ main {
 
 #dinamic-numbers {
     background-color: $mybeige;
+}
+
+#event {
+    .EventsComp:hover {
+        background-color: rgb(248, 248, 248);
+    }
+
+    h6 {
+        margin-bottom: 0;
+    }
 }
 </style>

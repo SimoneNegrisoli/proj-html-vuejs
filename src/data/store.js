@@ -101,9 +101,45 @@ const coursesData = [
     },
 ]
 
-export { navData, exploreData, informationData, cardsData, accordiumData, coursesData };
-
-
+const eventsData = [
+    {
+        city: 'Texas, US',
+        conferenceName: "Storytelling Workshop",
+        data: '22',
+        mounth: 'APR',
+    },
+    {
+        city: 'New York, US',
+        conferenceName: "Painting Art Contest 2020",
+        data: '10',
+        mounth: 'OCT',
+    },
+    {
+        city: 'Hamburg, Germany',
+        conferenceName: "International Art Fair 2020",
+        data: '23',
+        mounth: 'NOV',
+    },
+    {
+        city: 'Illinois, US',
+        conferenceName: "Street Performance: Call for Artist",
+        data: '15',
+        mounth: 'DEC',
+    },
+    {
+        city: 'Illinois, US',
+        conferenceName: "Consumer Food Safety Education Conference",
+        data: '22',
+        mounth: 'JUL',
+    },
+    {
+        city: 'Dubai',
+        conferenceName: "How meditation improve your mental health?",
+        data: '12',
+        mounth: 'AUG',
+    },
+]
+export { navData, exploreData, informationData, cardsData, accordiumData, coursesData, eventsData };
 
 // Home: [
 //     'MaxCoach Education',
